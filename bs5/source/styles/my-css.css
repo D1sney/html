@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Kalnia&display=swap');
+
+body {
+    font-family: Kalnia, serif;
+    background: linear-gradient(30deg, #0c001f 0%, #4402c0 100%);
+}
+
+p {
+    color: chartreuse;
+}
+
+.nav-link {
+    color: rgb(94, 179, 9);
+}
+
+.navbar-nav .nav-link.active {
+    color: chartreuse;
+}
+
+.navbar-brand img {
+    width: 3em;
+}
+
+.navbar-toggler {
+    background-color: rgb(94, 179, 9);
+}
+
+.card {
+    box-shadow: 2px 2px 14px 1px #700027;
+    color: chartreuse;
+    background: linear-gradient(120deg, #0c001f 0%, #23055b 100%);
+}
+
+.card-img-top {
+    height: 26rem;
+    
+
+}
+
+.sidebar {
+    color: chartreuse;
+    background: linear-gradient(120deg, #0c001f 0%, #23055b 100%);
+
+}
+
+.card a {
+    text-decoration: none;
+    color: chartreuse;
+}
+
+.w-100 {
+    max-height: 600px;
+}
+
+.slide-text,
+.footer-text {
+    color: chartreuse;
+    margin: auto auto;
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+footer,
+.btn-outline-primary {
+    background: linear-gradient(120deg, #0c001f 0%, #23055b 100%);
+    
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.help-text {
+    font-size: 1.5em;
+}
+
+.call-anim {
+    animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 100%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}

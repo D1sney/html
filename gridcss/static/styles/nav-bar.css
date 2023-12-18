@@ -1,0 +1,61 @@
+.nav-bar {
+    display: flex;
+    background-color: rgb(29, 31, 37);
+}
+
+.nav-bar img {
+    height: 3em;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-list a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* позволяет изменить css стиль элемента когда на него наведен курсор */
+.nav-list a:hover {
+    background-color: rgb(72, 76, 89);
+}
+
+.nav-btn {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .nav-btn {
+        font-size: 2em;
+        padding-inline: 10px;
+        padding-bottom: 3px;
+        border: none;
+        background-color: rgb(29, 31, 37);
+        color: aliceblue;
+        display: block;
+        cursor: pointer; /* позволяет при наведении мышкой менять курсор на палец */
+        
+    }
+    .nav-list {
+        display: none;
+    }
+
+    .nav-btn:hover {
+        background-color: rgb(72, 76, 89);
+    }
+
+    .drop:hover .nav-list {
+        display: block;
+        position: absolute;
+        right: 0px;
+        background-color: rgb(29, 31, 37);
+    }
+
+    .nav-bar {
+        justify-content: space-between;
+    }
+}

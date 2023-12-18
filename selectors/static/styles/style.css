@@ -1,0 +1,33 @@
+/* по тегу 1
+класс 10
+id 100
+стиль в самом теге 1000 */
+
+
+div {
+    background-color: rgb(43, 226, 86) !important;
+    /* эта приписка делает так чтобы данное свойство
+    нельзя было никак перебить другими тэгами*/
+}
+
+
+.conteiner {
+    background-color: blue;
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgb(137, 20, 220);
+}
+
+.border-div {
+    border-style: solid;
+    border-width: 5px;
+    border-color: crimson;
+}
+
+.border-div.conteiner {
+    border-color: cornflowerblue;
+}
+
+.conteiner p {
+    font-size: 30px;
+}
